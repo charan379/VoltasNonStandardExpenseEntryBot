@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>822,3246</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>822,2036</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="98">
@@ -129,7 +129,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Non Standard Expense Process Wrapper" sap:VirtualizedContainerService.HintSize="681.3333333333334,3181.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Non Standard Expense Process Wrapper" sap:VirtualizedContainerService.HintSize="663.3333333333334,1971.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Expense Status&#xA;" Default="Unkown" Name="Status" />
       <Variable x:TypeArguments="x:String" Name="TransportType">
@@ -183,7 +183,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="639.3333333333334,3094" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="621.3333333333334,1884" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -191,14 +191,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Expense Creation Process" sap:VirtualizedContainerService.HintSize="600.6666666666666,2808" sap2010:WorkflowViewState.IdRef="Sequence_51">
+        <Sequence DisplayName="Expense Creation Process" sap:VirtualizedContainerService.HintSize="582.6666666666666,1598" sap2010:WorkflowViewState.IdRef="Sequence_51">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:MultipleAssign sap2010:Annotation.AnnotationText="" DisplayName="Assign SR Details from Tansaction Item to Variables" sap:VirtualizedContainerService.HintSize="558.6666666666666,468.6666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+          <ui:MultipleAssign sap2010:Annotation.AnnotationText="" DisplayName="Assign SR Details from Tansaction Item to Variables" sap:VirtualizedContainerService.HintSize="540.6666666666666,84.66666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
@@ -303,11 +303,11 @@
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
-          <ui:MultipleAssign DisplayName="Assign Expense Details From Transaction Item to Variables" sap:VirtualizedContainerService.HintSize="558.6666666666666,192.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+          <ui:MultipleAssign DisplayName="Assign Expense Details From Transaction Item to Variables" sap:VirtualizedContainerService.HintSize="540.6666666666666,54" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_37">
@@ -347,17 +347,18 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
-          <Sequence DisplayName="Validate mandatory Queue Items" sap:VirtualizedContainerService.HintSize="558.6666666666666,634.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_137">
+          <Sequence DisplayName="Validate mandatory Queue Items" sap:VirtualizedContainerService.HintSize="540.6666666666666,1042.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_137">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[Not New List(Of String)(New String() {&quot;Voltas&quot;,&quot;Voltbek&quot;}).Contains(BrandIdentifier)]" DisplayName="Validate Brand" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="If_20">
+            <If Condition="[Not New List(Of String)(New String() {&quot;Voltas&quot;,&quot;Voltbek&quot;}).Contains(BrandIdentifier)]" DisplayName="Validate Brand" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="If_20">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -384,7 +385,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[Not New List(Of String)(New String() {&quot;Auto Approved&quot;,&quot;Approved-Audit Approved&quot;}).Contains(SrProcessingStatus)]" DisplayName="Validate SR Processing Status" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="If_21">
+            <If Condition="[Not New List(Of String)(New String() {&quot;Auto Approved&quot;,&quot;Approved-Audit Approved&quot;}).Contains(SrProcessingStatus)]" DisplayName="Validate SR Processing Status" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="If_21">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -411,10 +412,10 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[Not CInt(ExpenseAmount) &gt;= 100]" DisplayName="Validate Amount must be &gt;= 100" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="If_22">
+            <If Condition="[Not CInt(ExpenseAmount) &gt;= CInt(in_Config(&quot;MinAmount&quot;).ToString.Trim())]" DisplayName="Validate Amount must be &gt;= 100" sap:VirtualizedContainerService.HintSize="478.6666666666667,462" sap2010:WorkflowViewState.IdRef="If_22">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -438,7 +439,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[DealerExplanation.Length() &lt;= 2]" DisplayName="Validate Delear Explanation" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="If_23">
+            <If Condition="[DealerExplanation.Length() &lt;= 2]" DisplayName="Validate Delear Explanation" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="If_23">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -465,7 +466,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[Not New List(Of String)(New String() {&quot;Extra transportation&quot;,&quot;Travel cost&quot;,&quot;Exceptional/Special Charges&quot;,&quot;Special Discount&quot;}).Contains(ExpenseSubType)]" DisplayName="Validate Expense SubType" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="If_24">
+            <If Condition="[Not New List(Of String)(New String() {&quot;Extra transportation&quot;,&quot;Travel cost&quot;,&quot;Exceptional/Special Charges&quot;,&quot;Special Discount&quot;}).Contains(ExpenseSubType)]" DisplayName="Validate Expense SubType" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="If_24">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -555,14 +556,14 @@
               </If>
             </Switch>
           </Sequence>
-          <Sequence DisplayName="Create Expense" sap:VirtualizedContainerService.HintSize="558.6666666666666,1180" sap2010:WorkflowViewState.IdRef="Sequence_129">
+          <Sequence DisplayName="Create Expense" sap:VirtualizedContainerService.HintSize="540.6666666666666,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_129">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Switch x:TypeArguments="x:String" DisplayName="Click New Expense ( &quot; Plus &quot; ) icon" Expression="[sa_type]" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="Switch`1_7">
+            <Switch x:TypeArguments="x:String" DisplayName="Click New Expense ( &quot; Plus &quot; ) icon" Expression="[sa_type]" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="Switch`1_7">
               <Switch.Default>
                 <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  s_2_1_20_0_Ctrl'" sap:VirtualizedContainerService.HintSize="334,107.33333333333333" sap2010:WorkflowViewState.IdRef="Click_34" KeyModifiers="None" MouseButton="BTN_LEFT">
                   <ui:Click.CursorPosition>
@@ -654,7 +655,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
             </Switch>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1000" DisplayName="Fill Expense Sub Type" EmptyField="True" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="TypeInto_53" SimulateType="False" Text="[ExpenseSubType]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1000" DisplayName="Fill Expense Sub Type" EmptyField="True" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="TypeInto_53" SimulateType="False" Text="[ExpenseSubType]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0698675e-7518-4dd6-ab51-bf8fe21639cb" InformativeScreenshot="d4cae6e6c47768c1681ca9fa08c0d44d" Selector="&lt;html app='chrome.exe' title='Non Standard Expenses' /&gt;&lt;webctrl aria-role='combobox' name='s_2_1_7_0' tag='INPUT' type='text' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -672,10 +673,10 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:TypeInto>
-            <If Condition="[New List(Of String)(New String() {&quot;Extra transportation&quot;,&quot;Travel cost&quot;}).Contains(ExpenseSubType)]" DisplayName="Fill Transport Type Conditionally" sap:VirtualizedContainerService.HintSize="478.6666666666667,505.3333333333333" sap2010:WorkflowViewState.IdRef="If_27">
+            <If Condition="[New List(Of String)(New String() {&quot;Extra transportation&quot;,&quot;Travel cost&quot;}).Contains(ExpenseSubType)]" DisplayName="Fill Transport Type Conditionally" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="If_27">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -716,7 +717,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Expense Amount" EmptyField="True" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="TypeInto_55" Text="[ExpenseAmount]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Expense Amount" EmptyField="True" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="TypeInto_55" Text="[ExpenseAmount]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="003ad08a-6f2a-419a-a874-76d45fa63d2f" InformativeScreenshot="395b96c583e76b2098e0b553e16238ba" Selector="&lt;html app='chrome.exe' title='Non Standard Expenses' /&gt;&lt;webctrl name='s_2_1_3_0' tag='INPUT' type='text' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -734,7 +735,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:TypeInto>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Fill Dealer Explanation" EmptyField="True" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="TypeInto_56" Text="[DealerExplanation]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Fill Dealer Explanation" EmptyField="True" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="TypeInto_56" Text="[DealerExplanation]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="47700512-3da9-4c9f-9912-e4c2e1ef6e20" InformativeScreenshot="8a84df391ce0100d7310d53020fa53ed" Selector="&lt;html app='chrome.exe' title='Non Standard Expenses' /&gt;&lt;webctrl name='s_2_1_6_0' tag='INPUT' type='text' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -752,7 +753,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:TypeInto>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Brand Type" EmptyField="True" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="TypeInto_57" Text="[BrandIdentifier]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Brand Type" EmptyField="True" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="TypeInto_57" Text="[BrandIdentifier]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c45e1eb4-0b00-4a44-8839-d1e8e98abe7f" InformativeScreenshot="888b212e9b089000f77804e46a71af20" Selector="&lt;html app='chrome.exe' title='Non Standard Expenses' /&gt;&lt;webctrl aria-role='combobox' name='s_2_1_0_0' tag='INPUT' type='text' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -770,7 +771,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:TypeInto>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Save Record" sap:VirtualizedContainerService.HintSize="478.6666666666667,54" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="s" KeyModifiers="Ctrl">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Save Record" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="s" KeyModifiers="Ctrl">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="4eea51c9-d0f4-4a85-865d-50ff9dddd076">
                   <ui:Target.TimeoutMS>
@@ -789,7 +790,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:SendHotkey>
           </Sequence>
-          <Sequence DisplayName="Add SR to Created Expense" sap:VirtualizedContainerService.HintSize="558.6666666666666,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_130">
+          <Sequence DisplayName="Add SR to Created Expense" sap:VirtualizedContainerService.HintSize="540.6666666666666,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_130">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="srFound" />
               <Variable x:TypeArguments="x:Boolean" Default="False" Name="SameTypeExists" />
@@ -1423,7 +1424,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="605.3333333333334,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+        <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="587.3333333333334,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1453,7 +1454,7 @@
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="605.3333333333334,22" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="587.3333333333334,22" sap2010:WorkflowViewState.IdRef="Catch`1_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1476,7 +1477,7 @@
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="605.3333333333334,22" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="587.3333333333334,22" sap2010:WorkflowViewState.IdRef="Catch`1_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
