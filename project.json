@@ -3,11 +3,11 @@
   "description": "Voltas Non Standard Expense ( TA/DA ) Process Automation Using RE Framwork.\r\nIt takes a excel file as input and do data entry.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.Excel.Activities": "[2.16.1]",
     "UiPath.Form.Activities": "[2.0.2]",
-    "UiPath.System.Activities": "[21.10.4]",
+    "UiPath.System.Activities": "[22.10.4]",
     "UiPath.Testing.Activities": "[1.4.6]",
-    "UiPath.UIAutomation.Activities": "[21.10.5]",
+    "UiPath.UIAutomation.Activities": "[22.10.4]",
     "UiPath.WebAPI.Activities": "[1.11.2]"
   },
   "webServices": [],
