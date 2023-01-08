@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2298,5929.333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2298,6454</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="49">
@@ -112,7 +112,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main NonS Process" sap:VirtualizedContainerService.HintSize="2308,5864.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main NonS Process" sap:VirtualizedContainerService.HintSize="2308,6389.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="pincode Amount in database" Name="amount" />
       <Variable x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Action Taken" Default="AT" Name="AT" />
@@ -334,7 +334,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
-          <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DT_pincode_status]" DisplayName="check if pincode  data is Found in DB" ExistingDbConnection="[DBconnection]" sap:VirtualizedContainerService.HintSize="1259.3333333333333,88.66666666666667" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5" Sql="[&quot;SELECT areatype FROM voltas.area WHERE pincode =&quot;+ &quot;'&quot; + in_TransactionItem.SpecificContent(&quot;Pincode&quot;).ToString.Trim + &quot;'&quot;]">
+          <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[DT_pincode_status]" DisplayName="check if pincode  data is Found in Data base" ExistingDbConnection="[DBconnection]" sap:VirtualizedContainerService.HintSize="1259.3333333333333,88.66666666666667" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5" Sql="[&quot;SELECT areatype FROM voltas.area WHERE pincode =&quot;+ &quot;'&quot; + in_TransactionItem.SpecificContent(&quot;Pincode&quot;).ToString.Trim + &quot;'&quot;]">
             <ui:ExecuteQuery.Parameters>
               <scg:Dictionary x:TypeArguments="x:String, Argument" />
             </ui:ExecuteQuery.Parameters>
