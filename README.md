@@ -1,40 +1,38 @@
-### Documentation is included in the Documentation folder ###
+# VoltasNonStandardExpenseEntryBot :robot:
 
-[REFrameWork Documentation](https://github.com/UiPath/ReFrameWork/blob/master/Documentation/REFramework%20documentation.pdf)
+[![VERSION](https://img.shields.io/badge/VERSION-v2.0.43-sucess)](https://github.com/charan379/VoltasNonStandardExpenseEntryBot) [![LAST UPDATE](https://img.shields.io/badge/LAST--UPDATED-07--April--2023-sucess)](https://github.com/charan379/VoltasNonStandardExpenseEntryBot) [![AGPL License](https://img.shields.io/badge/LICENSE-GNU%20AGPLv3-informational)](https://www.gnu.org/licenses/agpl-3.0.en.html)
 
-### REFrameWork Template ###
-**Robotic Enterprise Framework**
+## About
 
-* Built on top of *Transactional Business Process* template
-* Uses *State Machine* layout for the phases of automation project
-* Offers high level logging, exception handling and recovery
-* Keeps external settings in *Config.xlsx* file and Orchestrator assets
-* Pulls credentials from Orchestrator assets and *Windows Credential Manager*
-* Gets transaction data from Orchestrator queue and updates back status
-* Takes screenshots in case of system exceptions
+VoltasNonStandardExpenseEntryBot is developed using UiPath RE-Framework to automate the data entry
+work of Non Standard Expense.
 
+[[Problem and Solution Statements](/Documentation//ProblemAndSolution.md)]
 
-### How It Works ###
+## Usage
 
-1. **INITIALIZE PROCESS**
- + ./Framework/*InitiAllSettings* - Load configuration data from Config.xlsx file and from assets
- + ./Framework/*GetAppCredential* - Retrieve credentials from Orchestrator assets or local Windows Credential Manager
- + ./Framework/*InitiAllApplications* - Open and login to applications used throughout the process
+#### Create Required Queue, assets in Orchestrator and fill into config File
 
-2. **GET TRANSACTION DATA**
- + ./Framework/*GetTransactionData* - Fetches transactions from an Orchestrator queue defined by Config("OrchestratorQueueName") or any other configured data source
+[[Config File details](/Documentation//Config.md)]
 
-3. **PROCESS TRANSACTION**
- + *Process* - Process trasaction and invoke other workflows related to the process being automated 
- + ./Framework/*SetTransactionStatus* - Updates the status of the processed transaction (Orchestrator transactions by default): Success, Business Rule Exception or System Exception
+- Clone this project and publish to Orchestrator using UiPath Studio
+- Open UiPath Assistant, you will find new process named _VoltasNonStandardExpenseEntryBot_
+  ![screenshot-preview](Documentation/Screenshots/Assistant.jpg)
+- Open Process and enable PIP Mode , Click RUN.
+  ![screenshot-preview](Documentation/Screenshots/Assistant-start.jpg)
+- Wait for process to start.
+- A popup form will open, enter CRM credentials and click on submit
+  ![screenshot-preview](Documentation/Screenshots/userIdPasswordform.jpg)
+- Again another popup form will open, now specify excel file path, and excel sheet name
+  ![screenshot-preview](Documentation/Screenshots/excelFile.jpg)
 
-4. **END PROCESS**
- + ./Framework/*CloseAllApplications* - Logs out and closes applications used throughout the process
+- BOT will start Data Entry Process
 
 
-### For New Project ###
+## License
 
-1. Check the Config.xlsx file and add/customize any required fields and values
-2. Implement InitiAllApplications.xaml and CloseAllApplicatoins.xaml workflows, linking them in the Config.xlsx fields
-3. Implement GetTransactionData.xaml and SetTransactionStatus.xaml according to the transaction type being used (Orchestrator queues by default)
-4. Implement Process.xaml workflow and invoke other workflows related to the process being automated
+ [![AGPL License](https://img.shields.io/badge/LICENSE-GNU%20AGPLv3-brightgreen)](https://www.gnu.org/licenses/agpl-3.0.en.html)
+
+ VoltasNonStandardExpenseEntryBot is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with VoltasNonStandardExpenseEntryBot. If not, see https://www.gnu.org/licenses/agpl-3.0.en.html.

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1153.3333333333333,7942.666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1153.3333333333333,6122.666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="88">
@@ -115,7 +115,7 @@
       <AssemblyReference>NPOI</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="859.3333333333334,7878" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="859.3333333333334,6058" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="UserInput" />
       <Variable x:TypeArguments="sd:DataTable" Name="tadaDT" />
@@ -138,7 +138,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="StartsWith" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="338,173.33333333333334" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="New" QueueName="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]" Result="[QueueList]" />
     </Sequence>
-    <If Condition="[QueueList.Count &lt;= 0]" DisplayName="Push new queue items" sap:VirtualizedContainerService.HintSize="817.3333333333334,5048" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[QueueList.Count &lt;= 0]" DisplayName="Push new queue items" sap:VirtualizedContainerService.HintSize="817.3333333333334,3228" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -146,17 +146,17 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="If New queus = 0" sap:VirtualizedContainerService.HintSize="542,1309.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+        <Sequence DisplayName="If New queus = 0" sap:VirtualizedContainerService.HintSize="442,308" sap2010:WorkflowViewState.IdRef="Sequence_20">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500,96" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Number Pending Queue items are :  &quot; + (QueueList.Count).ToString + Environment.NewLine + &quot; Requesting to Pusing New Queue items&quot;]" />
-          <Sequence DisplayName="Get TADA data and add to queue" sap:VirtualizedContainerService.HintSize="500,1086" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="400,96" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Number Pending Queue items are :  &quot; + (QueueList.Count).ToString + Environment.NewLine + &quot; Requesting to Pusing New Queue items&quot;]" />
+          <Sequence DisplayName="Get TADA data and add to queue" sap:VirtualizedContainerService.HintSize="400,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_14">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -268,7 +268,7 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="&gt; 0" sap:VirtualizedContainerService.HintSize="738.6666666666666,3556" sap2010:WorkflowViewState.IdRef="Sequence_21">
+        <Sequence DisplayName="&gt; 0" sap:VirtualizedContainerService.HintSize="738.6666666666666,2737.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_21">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Default="Continue with old Items" Name="Opp" />
             <Variable x:TypeArguments="x:String" Default="Yes" Name="UserChoice" />
@@ -278,9 +278,23 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="696.6666666666666,96" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Number Pending Queue items are : &quot; + (QueueList.Count).ToString + Environment.NewLine + &quot;So, Waiting for user response&quot;]" />
-          <ui:MessageBox AutoCloseAfter="00:01:00" Buttons="YesNoCancel" Caption="[&quot;There Are Pending New Queue Items Left are : &quot; + QueueList.Count.ToString]" ChosenButton="[UserChoice]" DisplayName="Get User Input For Peding Queue Items" sap:VirtualizedContainerService.HintSize="696.6666666666666,86.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;If You want Continues with : &quot; + QueueList.Count.ToString + &quot;  - Old Items {  Click Yes  }&quot;+ Environment.NewLine +&#xA;&quot;If You want Push New Queue Items and Delete these : &quot;+QueueList.Count.ToString+&quot; Old Items  , Than {  Click No  }&quot;+Environment.NewLine +&#xA;&quot;Else { Click Cancel } to Continue with Deafult Option - Yes&quot;]" TopMost="True" />
-          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="696.6666666666666,885.3333333333334" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="696.6666666666666,54" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Number Pending Queue items are : &quot; + (QueueList.Count).ToString + Environment.NewLine + &quot;So, Waiting for user response&quot;]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+          <ui:MessageBox AutoCloseAfter="00:01:00" Buttons="YesNoCancel" Caption="[&quot;There Are Pending New Queue Items Left are : &quot; + QueueList.Count.ToString]" ChosenButton="[UserChoice]" DisplayName="Get User Input For Peding Queue Items" sap:VirtualizedContainerService.HintSize="696.6666666666666,54" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;If You want Continues with : &quot; + QueueList.Count.ToString + &quot;  - Old Items {  Click Yes  }&quot;+ Environment.NewLine +&#xA;&quot;If You want Push New Queue Items and Delete these : &quot;+QueueList.Count.ToString+&quot; Old Items  , Than {  Click No  }&quot;+Environment.NewLine +&#xA;&quot;Else { Click Cancel } to Continue with Deafult Option - Yes&quot;]" TopMost="True">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:MessageBox>
+          <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="696.6666666666666,54" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
             <ui:IfElseIf.ConditionBlocks>
               <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                 <ui:IfElseIfBlock BlockType="If" Condition="[UserChoice = &quot;Yes&quot;]">
@@ -344,20 +358,20 @@
             </ui:IfElseIf.ConditionBlocks>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:IfElseIf>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="696.6666666666666,96" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;User Choice is : &quot; + Opp]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="696.6666666666666,54" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;User Choice is : &quot; + Opp]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <If Condition="[Opp = &quot;Push New Items&quot;]" sap:VirtualizedContainerService.HintSize="696.6666666666666,2144.6666666666665" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[Opp = &quot;Push New Items&quot;]" sap:VirtualizedContainerService.HintSize="696.6666666666666,2274" sap2010:WorkflowViewState.IdRef="If_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -365,14 +379,18 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Push New" sap:VirtualizedContainerService.HintSize="618,1862" sap2010:WorkflowViewState.IdRef="Sequence_22">
+              <Sequence DisplayName="Push New" sap:VirtualizedContainerService.HintSize="618,1991.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="576,96" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Trace" Message="[&quot;Deleting Old Items...&quot;]" />
-                <ui:DeleteQueueItems TimeoutMS="{x:Null}" DisplayName="Delete Queue Items" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="576,173.33333333333334" sap2010:WorkflowViewState.IdRef="DeleteQueueItems_1" QueueItems="[QueueList]" />
+                <ui:DeleteQueueItems DisplayName="Delete Queue Items" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="576,302.6666666666667" sap2010:WorkflowViewState.IdRef="DeleteQueueItems_1" QueueItems="[QueueList]">
+                  <ui:DeleteQueueItems.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:DeleteQueueItems.TimeoutMS>
+                </ui:DeleteQueueItems>
                 <Sequence DisplayName="Push New Items" sap:VirtualizedContainerService.HintSize="576,1425.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_27">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
