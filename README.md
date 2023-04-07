@@ -23,16 +23,18 @@ work of Non Standard Expense.
 - Wait for process to start.
 - A popup form will open, enter CRM credentials and click on submit
   ![screenshot-preview](Documentation/Screenshots/userIdPasswordform.jpg)
-- Again another popup form will open, now specify excel file path, and excel sheet name
+- Again another popup form will open, now specify excel file path, and excel sheet name.
+  excel file must be in following format.
+  ![excel-format](Documentation/formatHeaders.jpg)
+  [[Click Here to download excel file template](/Documentation//NonStandardExpenseFormatForUipathBot.xlsx)]
   ![screenshot-preview](Documentation/Screenshots/excelFile.jpg)
 
 - BOT will start Data Entry Process
 
-
 ## License
 
- [![AGPL License](https://img.shields.io/badge/LICENSE-GNU%20AGPLv3-brightgreen)](https://www.gnu.org/licenses/agpl-3.0.en.html)
+[![AGPL License](https://img.shields.io/badge/LICENSE-GNU%20AGPLv3-brightgreen)](https://www.gnu.org/licenses/agpl-3.0.en.html)
 
- VoltasNonStandardExpenseEntryBot is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+VoltasNonStandardExpenseEntryBot is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License along with VoltasNonStandardExpenseEntryBot. If not, see https://www.gnu.org/licenses/agpl-3.0.en.html.
